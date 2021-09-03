@@ -1,0 +1,27 @@
+{
+  "name": "@loynoir/example-jest-config-esm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier -w jest.config.ts test config && shfmt -l -w test.sh",
+    "test": "bash test.sh"
+  },
+  "author": "loynoir",
+  "license": "ISC",
+  "dependencies_comment": "ensure all installed :)",
+  "dependencies": {
+    "@loynoir/example-import-meta-url": "github:loynoir/example-import-meta-url.mjs",
+    "@loynoir/example-toplevel-await": "github:loynoir/example-toplevel-await.mjs",
+    "@loynoir/example-toplevel-this": "github:loynoir/example-toplevel-this.mjs",
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "@types/node-fetch": "^2.5.12",
+    "jest": "^27.1.0",
+    "node-fetch": "^3.0.0",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
