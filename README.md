@@ -80,12 +80,15 @@ ALL PASS! 🎉
 ### Known not work EDGE case 
 
 Alarm, although I don't think there is real world use case,  exclude I'm testing config.
-Lazy to extract and reproduce, brief.
+
+Lazy to extract and reproduce, brief:
 
 If you have
+- setted `--experimental-vm-modules`
 - jest config `.projects` length >= 2
 - jest config `.projects` include `jsdom`
-- using `import(XXX)` instead of `import XXX`
+- using `import('node-fetch')` instead of `import nf from 'node-fetch'`
+
 
 ### Last
 Good luck, bro!
