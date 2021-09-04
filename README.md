@@ -7,7 +7,9 @@ Adapt below files to your project folder
 - `jest.config.ts`
 - `config/tsconfig*json`
 
-If you accept `--experimental-vm-modules` flag, you can get full ESM jest. 
+---
+
+If you accept `--experimental-vm-modules` flag, you can get full ESM jest, or I say hardcore ESM.
 
 
 <details>
@@ -31,7 +33,8 @@ $ jest
 $ env NODE_OPTIONS="$NODE_OPTIONS --experimental-vm-modules" jest
 ```
 
-If you don't accept `--experimental-vm-modules` flag, you get `ESM->CJS`.
+---
+If you don't accept `--experimental-vm-modules` flag, you get `ESM->CJS`, or I say faking ESM. Hardcore ESM feature within `test/config/ESMOnlyHard.spec.ts` not work.
 
 
 <details>
@@ -42,8 +45,9 @@ If you don't accept `--experimental-vm-modules` flag, you get `ESM->CJS`.
 
 Pro: Stable
 
-Con: You need to know all ESM-only package name under recursive dependency tree.
-
+Con: 
+- You need to know all ESM-only package name under recursive dependency tree.
+- Hard core ESM feature will fatal, or silent fail
   </p>
 </details>
 
@@ -51,6 +55,8 @@ Con: You need to know all ESM-only package name under recursive dependency tree.
 # modify `HARDCODE_ESMONLY` pattern jest.config.ts
 $ jest
 ```
+
+
 
 ### Tested Package Manager
 [x] pnpm
